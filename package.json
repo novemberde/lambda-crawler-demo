@@ -1,0 +1,27 @@
+{
+  "name": "lambda-crawler-demo",
+  "version": "1.0.0",
+  "description": "Crawler demo using Node + AWS Lambda + AWS CloudWatch + Tor + Slack",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "got": "^8.0.1"
+  },
+  "devDependencies": {
+    "serverless": "^1.25.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novemberde/lambda-crawler-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/novemberde/lambda-crawler-demo/issues"
+  },
+  "homepage": "https://github.com/novemberde/lambda-crawler-demo#readme"
+}
