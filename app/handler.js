@@ -1,16 +1,33 @@
 'use strict';
 
-module.exports.hello = (event, context, callback) => {
-  const response = {
-    statusCode: 200,
-    body: JSON.stringify({
-      message: 'Go Serverless v1.0! Your function executed successfully!',
-      input: event,
-    }),
-  };
+const got = require('got');
+const cheerio = require('cheerio');
+const SLACK_URL = require('./slack.config.json').URL;
 
-  callback(null, response);
+module.exports.crawler = (event, context, callback) => {
+  let result;
 
-  // Use this code if you don't use the http event with the LAMBDA-PROXY integration
-  // callback(null, { message: 'Go Serverless v1.0! Your function executed successfully!', event });
-};
+  got('https://www.naver.com').then(res => {
+    const $ = cheerio.load(res.body);
+
+    result = $('.ca_item .ca_a');
+
+    return got(SLACK_URL, {
+      method: "post",
+      body: JSON.stringify({text: result.text()})
+    });
+
+    
+  }).then(() => {
+    const response = {
+      statusCode: 200,
+      body: JSON.stringify({
+        message: result.text(),
+      }),
+    };
+
+    console.log(result.text());
+    callback(null, response);
+  });
+
+}
