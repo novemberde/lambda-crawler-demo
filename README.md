@@ -1,5 +1,5 @@
 # lambda-crawler-demo
-Crawler demo using Node + AWS Lambda + AWS CloudWatch + Tor + Slack
+Crawler demo using Node + AWS Lambda + AWS CloudWatch + Slack
 
 ## Requirements
 
@@ -28,4 +28,4 @@ finally,
 $ npx serverless deploy
 ```
 
-[LISCENCE](/LICENSE)
+[LICENSE](/LICENSE)
