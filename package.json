@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "Crawler demo using Node + AWS Lambda + AWS CloudWatch + Tor + Slack",
   "main": "index.js",
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "got": "^8.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "serverless": "^1.25.0"
   },
