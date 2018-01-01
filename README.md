@@ -28,4 +28,6 @@ finally,
 $ npx serverless deploy
 ```
 
-[LICENSE](/LICENSE)
+## LICENSE
+
+[MIT LICENSE](/LICENSE)
