@@ -27,3 +27,5 @@ finally,
 ```sh
 $ npx serverless deploy
 ```
+
+[LISCENCE](/LICENSE)
