@@ -22,6 +22,8 @@ add slack.config.json in app directory.
 }
 ```
 
+finally,
+
 ```sh
 $ npx serverless deploy
 ```
