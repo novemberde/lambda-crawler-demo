@@ -1,6 +1,8 @@
 # lambda-crawler-demo
 Crawler demo using Node + AWS Lambda + AWS CloudWatch + Slack
 
+[Guide(KR)](https://novemberde.github.io/node/2017/12/31/Node-crawler.html)
+
 ## Requirements
 
 - npm >= 5.0
